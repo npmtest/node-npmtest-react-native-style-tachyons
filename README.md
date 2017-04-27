@@ -35,45 +35,20 @@
 ```json
 
 {
-    "name": "react-native-style-tachyons",
-    "description": "functional, maintainable styling for react-native",
-    "license": "MIT",
-    "version": "3.3.2",
-    "keywords": [
-        "react",
-        "react-native",
-        "android",
-        "ios",
-        "StyleSheet",
-        "style",
-        "responsive",
-        "mobile",
-        "performance",
-        "design",
-        "css"
-    ],
     "author": {
         "name": "Fabian Zeindl",
         "url": "http://github.com/fab1an"
     },
-    "homepage": "https://github.com/tachyons-css/react-native-style-tachyons",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/tachyons-css/react-native-style-tachyons.git"
-    },
     "bugs": {
         "url": "https://github.com/tachyons-css/react-native-style-tachyons/issues"
     },
-    "main": "lib/index.js",
     "dependencies": {
         "color": "^1.0.3",
         "css-color-names": "0.0.4",
         "debug": "^2.6.3",
         "lodash": "^4.17.4"
     },
-    "files": [
-        "lib/"
-    ],
+    "description": "functional, maintainable styling for react-native",
     "devDependencies": {
         "babel-cli": "^6.24.0",
         "babel-eslint": "^7.2.1",
@@ -89,17 +64,54 @@
         "react": "^15.4.2",
         "tape": "^4.6.3"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "38495d78e75bc8ba850158124141e58d6d35c334",
+        "tarball": "https://registry.npmjs.org/react-native-style-tachyons/-/react-native-style-tachyons-3.3.2.tgz"
+    },
+    "files": [
+        "lib/"
+    ],
+    "gitHead": "f9806ebc8d3e8864842318ea10de525947cb0f71",
+    "homepage": "https://github.com/tachyons-css/react-native-style-tachyons",
+    "keywords": [
+        "react",
+        "react-native",
+        "android",
+        "ios",
+        "StyleSheet",
+        "style",
+        "responsive",
+        "mobile",
+        "performance",
+        "design",
+        "css"
+    ],
+    "license": "MIT",
+    "main": "lib/index.js",
+    "maintainers": [
+        {
+            "name": "cel1ne"
+        }
+    ],
+    "name": "react-native-style-tachyons",
+    "optionalDependencies": {},
     "peerDependencies": {
         "react-native": "0.x"
     },
-    "scripts": {
-        "build": "rm -Rf lib && babel src -d lib",
-        "_test": "tape -r babel-register 'test/**/*_spec.js' | faucet",
-        "lint": "eslint_d --fix src test",
-        "test": "npm run lint && npm run build && npm run _test",
-        "publish-please": "publish-please",
-        "prepublish": "publish-please guard"
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tachyons-css/react-native-style-tachyons.git"
     },
+    "scripts": {
+        "_test": "tape -r babel-register 'test/**/*_spec.js' | faucet",
+        "build": "rm -Rf lib && babel src -d lib",
+        "lint": "eslint_d --fix src test",
+        "prepublish": "publish-please guard",
+        "publish-please": "publish-please",
+        "test": "npm run lint && npm run build && npm run _test"
+    },
+    "version": "3.3.2",
     "bin": {}
 }
 ```
